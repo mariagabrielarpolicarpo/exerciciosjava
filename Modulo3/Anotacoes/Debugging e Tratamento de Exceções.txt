@@ -1,0 +1,40 @@
+A ferramenta 
+
+Thread.DumpStank() - imprime um rastramento de pilha 
+atual no fluxo de erro padrão
+
+
+EXCEÇÕES 
+
+- Exceção é um evento que interrompe o fluxo normal do 
+processamento de uma classe. 
+- Com o tratamento de exceções, um programa pode
+continuar executando depois de lidar com um problema
+- Importante: incorporar a estratégia de tratamento de 
+exceção desde o início da criação do código 
+
+
+Tratamento de exceções
+
+a) try, catch, finally: cada uma dessas palavras,
+juntas, definem blocos para o tratamento de exceções
+b) throws: declara que um método pode lançar uma 
+ou várias exceções
+c) throw: lança explicitamente uma exception 
+
+Error: usado pela JVM que serve para indicar se existe
+algm problema de recurso do programa, tornando a 
+execução impossível de continuar(não é possível tratar)
+Erros não checados pelo compilador, são irrecuperáveis
+
+
+Unchecked(runtime): exceptions que podem ser evitados
+se forem tratados e analisados pelo dev. 
+
+
+
+
+
+Checked Exception: expections que devem ser evitados
+e tratados pelo dev. 
+
