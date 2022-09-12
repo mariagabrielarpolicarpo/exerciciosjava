@@ -1,16 +1,16 @@
-I - POR QUE USAR ? 
+# Programação Orientada a Objetos
+
+## I - POR QUE USAR ? 
 
 programação estruturada(C) x Prog. orientada a objetos
-- a estrutura tem uma representação mais simplista; 
-foca em funções e dados; 
-- P.O.O tem uma representação mais realista; 
-foca na modelagem de entidades e interações entre elas;
+- a estrutura tem uma representação mais simplista; foca em funções e dados; 
+- P.O.O tem uma representação mais realista; foca na modelagem de entidades e interações entre elas;
 
 vantagens: melhor coesão; melhor acoplamento; 
 diminuição do gap semântico; coletor de lixo 
 
 
-II - FUNDAMENTOS
+## II - FUNDAMENTOS
  
 - Abstração
 - Reuso: capacidade de criar novas unidades de código
@@ -22,7 +22,7 @@ Loja online do livro (abstraindo)
 assunto; título; páginas; autor; editora; descrição 
 
 
-III - ESTRUTURA 
+### III - ESTRUTURA 
 
 a) Classe - uma classe descreve os serviços por seus
 objetos e quais informações eles podem armazenar; 
@@ -179,7 +179,7 @@ carro.<método>;
 Carro.<método>; 
 
 
-IV - AS RELAÇÕES 
+## IV - AS RELAÇÕES 
 
 a) HERANÇAS  
 principal finalidade: criar subtipos
@@ -316,8 +316,6 @@ class Compra {
   ... 
   } 
 }
-
-
 
 
 c) INTERFACE - define um contrato que deve ser seguido
