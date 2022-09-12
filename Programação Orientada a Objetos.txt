@@ -1,0 +1,393 @@
+I - POR QUE USAR ? 
+
+programação estruturada(C) x Prog. orientada a objetos
+- a estrutura tem uma representação mais simplista; 
+foca em funções e dados; 
+- P.O.O tem uma representação mais realista; 
+foca na modelagem de entidades e interações entre elas;
+
+vantagens: melhor coesão; melhor acoplamento; 
+diminuição do gap semântico; coletor de lixo 
+
+
+II - FUNDAMENTOS
+ 
+- Abstração
+- Reuso: capacidade de criar novas unidades de código
+a partir de outros já existentes. 
+- Encapsulamento: capacidade de esconder complexidades
+e proteger dados. 
+
+Loja online do livro (abstraindo) 
+assunto; título; páginas; autor; editora; descrição 
+
+
+III - ESTRUTURA 
+
+a) Classe - uma classe descreve os serviços por seus
+objetos e quais informações eles podem armazenar; 
+é através da classe que a gente vai modelar o mundo
+real; 
+EX: bola; carro; viagem; venda; computador
+DICAS: são substantivos; nomes significativos;
+o contexto deve ser considerado; 
+
+Como se cria uma classe? 
+
+JAVA               C#                  Python  
+class Carro {    class Carro {       class Carro: 
+}                }                       pass
+
+b) Atributo - é o elemento de uma classe responsável
+por definir sua estrutura de dados. 
+
+EX: bola(diametro); carro(cor); viagem(distancia); 
+computador(memória); venda(valor); 
+DICAS: substantivos e adjetivos; nomes significativos; 
+contexto deve ser considerado; abstração; tipos 
+adequados; 
+
+Atributo x Variável 
+A: é próprio e peculiar a alguém ou alguma coisa
+V: sujeito a variações ou mudanças; pode variar; 
+inconstante; instável; 
+
+JAVA               C#                  Python  
+class Carro {    class Carro {       class Carro: 
+    int portas;      int portas;          portas = 0
+}                }                       
+ 
+
+c) Método - é uma sub-rotina que e disponibilizada
+pela classe. Os métodos servem para manipular os 
+atributos dentro da classe, responsáveis por definir
+e realizar um determinado comportamento; 
+
+EX: Carro(ligar); Venda(calcular total); 
+Comprador(realizar troca); Computador(desligar);
+dicas: verbos; nomes significativos; contexto deve
+ser considerado; 
+
+Criação: 
+
+Java e C#
+
+- visibilidade; retorno; nome; parâmetros 
+
+Python 
+- def; nome; parâmetros 
+
+Java e C#
+
+class Carro { 
+   void frear() { 
+     ... 
+  } 
+}
+
+Python 
+
+class Carro: 
+     def frear() 
+
+Construtor 
+
+Java e C#
+
+class Carro { 
+   Carro() { 
+     ... 
+  } 
+}
+
+
+Python 
+class Carro: 
+	def_init_(self): 
+
+
+Destrutor: limpar memória
+
+Java
+
+class Carro { 
+   void finalize() { 
+     ... 
+  } 
+}
+
+C# 
+
+class Carro { 
+   ~Carro() { 
+     ... 
+  } 
+}
+
+Python 
+class Carro: 
+	def_del_(self): 
+
+função: criar objeto; passar valores iniciais para os
+atributos; 
+
+Sobrecarga: mudar a assinatura de acordo com a 
+necessidade; se eu tenho uma classe chamada compra, 
+eu posso passar como parâmetro apenas a soma dos 
+produtos, mas e se tiver desconto na compra? eu tenho
+que passar um outro parâmetro, essa variação de
+parâmetros em que se mantém o nome da classe é
+chamada sobrecarga. 
+Assinatura: nome+parâmetros 
+
+m1() 
+m1(int i) 
+m1(float f) 
+
+d) Objeto - é a representação de um conceito/entidade
+do mundo real que pode ser concreto ou abstrato. 
+
+Classe x Objeto 
+C: é estática; é um molde; 
+O: para fazer que a classe funcione, é preciso criar
+o objeto; é quem faz as coisas acontecerem; 
+
+
+Criação 
+
+Java e C# 				Python 
+
+Carro carro = new Carro();          carro = Carro()
+ 
+
+e) Mensagem - é o processo de ativação de um método 
+de um objeto. Ocorre quando uma chamada a esse método
+é realizada. 
+
+Java e C# 
+
+Carro carro = new Carro(); 
+
+carro.<método>; 
+Carro.<método>; 
+
+Python
+
+carro = Carro() 
+
+carro.<método>; 
+Carro.<método>; 
+
+
+IV - AS RELAÇÕES 
+
+a) HERANÇAS  
+principal finalidade: criar subtipos
+é o relacionamento entre classes em que uma classe
+chamada de subclasse é um subtipo de outra classe
+chamada de superclasse. 
+
+Criação 
+
+Java 
+
+class A extends B { 
+... 
+} 
+
+C# 
+
+class A : B { 
+... 
+} 
+
+Python 
+
+class A(B): 
+... 
+
+no exercício o professor cria 3 subclasses: carro, 
+caminhao e moto que derivam da superclasse veículo 
+é só fazer 
+
+class Carro extends Veiculo { 
+... 
+} 
+
+
+
+TIPOS DE HERANÇA 
+
+1) Simples: A subclasse só tem uma classe mãe 
+ex: gerente, vendedor e faxineiro -> funcionário(superclasse)
+
+2) Múltipla: a subclasse tem uma ou mais superclasses
+
+Estagiário -> funcionário
+Estagiário -> estudante 
+
+***** Java e C# não têm herança múltipla!!
+
+UPCAST E DOWNCAST 
+
+Upcast (subir na hierarquia de classes, pegar a 
+subclasse e transformar na superclasse) 
+
+Java e C#
+
+A a = new B(); 
+
+Downcast (descer na hierarquia de classes, pegar a 
+superclasse e transformar na subclasse) 
+
+Java e C#
+
+B a = (B) new A (); 
+
+
+POLIMORFISMO 
+"A mesma ação, se comportando diferente." - a possi
+bilidade do mesmo método ser usado de forma diferente
+
+Exemplo: eu tenho uma superclasse chamada pagamento 
+e quatro subclasses: boleto, crédito, débito e pix, 
+cada uma dessas 4 subclasses vão ter ações diferentes
+
+
+SOBRESCRITA
+"A mesma ação, podendo se comportar diferente" 
+
+Exemplo: eu tenho uma entidade chamada conta e duas
+subclasses chamadas corrente e poupança. Eu tenho a
+operação exibirSaldo(); Eu só uso essa operação na 
+poupança, pois além do valor que está lá, eu adiciono
+o rendimento dela, é feita uma conta. Já na conta 
+corrente, é apenas mostrar o que tá lá, já que não 
+tem rendimento
+
+
+
+b) ASSOCIAÇÃO - classes e objetos interagem entre si 
+
+1) Estrutural 
+i)Composição - "Com Parte Todo" 
+Ex: Pessoa e Endereço, um endereço específico só 
+pertence a uma pessoa, se a pessoa deixa de existir,
+o endereço deixa de existir também. O endereço depende
+de pessoa para existir 
+
+Java C# Python 
+
+class Pessoa { 
+  Endereco endereco; 
+}
+
+ii) Agregação - "Sem Parte Todo" 
+Ex: Disciplina e Aluno 
+Ex: se uma disciplina deixa de existir, isso não 
+significa que o aluno vai deixar de existir e se o 
+aluno deixar de existir isso não significa que a 
+disciplina vai deixar de existir 
+
+Java C# Python 
+
+class Disciplina { 
+  Aluno aluno; 
+} 
+
+
+Agregação x Composição - no código é igual;
+a diferença é conceitual, na modulação se diferencia; 
+
+
+2) Comportamental 
+
+i) Dependência - "Depende de" 
+Ex: Compra e cumpom 
+
+A entidade compra depende do método finalizar() que 
+depende da entidade cumpom 
+
+Java C# Python 
+
+class Compra { 
+  ... 
+  finalizar(Cupom cupom, ...) {
+  ... 
+  } 
+}
+
+
+
+
+c) INTERFACE - define um contrato que deve ser seguido
+pela classe que a implementa. Quando uma classe 
+implementa uma interface, ela se compromete a realizar
+todos os comportamentos que a interface disponibiliza
+
+Java 
+
+interface A { 
+	... 
+} 
+
+class B implements A { 
+	... 
+} 
+
+C#
+interface A { 
+	... 
+} 
+
+class B : A { 
+	... 
+} 
+
+
+
+
+V - A ORGANIZAÇÃO 
+
+a) PACOTES - são uma organização física ou lógica 
+criada para separar classes com responsabilidades
+distintas; 
+
+Java 
+
+package...; 
+
+import ...; 
+
+C#
+namespace {...} 
+using...; 
+
+Python 
+from...
+import...
+
+
+b) VISIBILIDADES - tem como finalidade determinar até
+que ponto uma classe, atributo ou método pode ser 
+usado. 
+
+Tipos: 
+
+1) private: são visíveis somente dentro da classe 
+private int i; 
+private void do(); 
+
+2) protected: dentro da classe, mesmo pacote e
+subclasses; 
+
+protected int i; 
+protected void do(); 
+
+3) public: é visível em qualquer lugar; 
+
+public int i; 
+public void do(); 
+
+Criar atributos no privado para proteção do código
+Métodos públicos ou protegidos

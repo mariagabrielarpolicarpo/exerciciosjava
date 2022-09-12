@@ -1,0 +1,24 @@
+Prog. Orientada a Objeto x Prog. Estruturada
+
+
+P.E. - a organização do código torna-se um problema
+para códigos grandes e complexos; 
+
+Objetos - representação programática de carro, tem
+atributos e classes; 
+atributos: altura, largura, cor, combustível etc; 
+métodos: ligar, desligar, parar, andar, acelerar etc; 
+
+Conceitos básicos 
+
+a) Classe e objeto 
+b) Associação de classes - quando utilizamos uma 
+classe dentro de outra classe 
+c) Herança - superclasse e subclasse 
+d) Encapsulamento - possibilidade de proteger alguns
+dados ou funcionalidades da classe, não permitindo
+que seus consumidores possam acessá-la
+e) Polimorfismo - aqui podemos criar funções que 
+terão o memso nome, mas que podem ter diferentes 
+processamentos, implementações ou na mesma classe 
+o mesmo nome e diferentes entradas.
