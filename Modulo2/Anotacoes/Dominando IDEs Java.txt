@@ -1,0 +1,14 @@
+Sobre o Java
+
+->Tudo em Java é objeto. 
+->PRESTAR MUITA ATENÇÃO EM ORIENTAÇÃO A OBJETOS. 
+
+-> .java -> JDK complica e gera o arquivo bytecode
+-> JVM lê o arquivo compilado .class e as bibliotecas
+padrões do Java que estão no JRE 
+
+-> JDK: responsável por compilar o código fonte .java
+em bytecode .class
+-> JVM: executa o bytebode . class 
+-> JRE: fornece as bibliotecas padrões do Java 
+para o JDK complica e o JVM executar

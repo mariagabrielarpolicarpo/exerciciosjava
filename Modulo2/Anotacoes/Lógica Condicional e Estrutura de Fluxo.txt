@@ -1,0 +1,91 @@
+I - OPERADORES RELACIONAIS 
+
+Igualdade: == 
+Diferença: != 
+comparativos: >, >=, <, <=
+
+- é possível comparar inteiro com float; 
+- é possível b1 == true; b2 = false fazer: 
+b1 == b2; b1!=b2; 
+
+- os operadores == e != funcionam com string, mas 
+os operadores >, < etc não funcionam. 
+
+
+II - OPERADORES LÓGICOS 
+
+
+&&
+V V = V 
+V F = F 
+F V = F
+F F = F
+
+|| 
+V V = V 
+V F = V 
+F V = V 
+F F = F
+
+Operação que só é verdade quando ambos os operadores
+são opostos, simbologia ^
+V V F 
+V F V 
+F V V 
+F F F 
+
+! (operação que inverte o valor lógico de um operando)
+V = F 
+F = V 
+
+
+III - CONTROLE DE FLUXO 
+
+Decisão: if, if-else, if-else if - else, switch 
+Repetição: for, while, do while 
+Interrupção: break, continue e return
+
+switch { 
+case 1: 
+break; 
+case 2:
+break; 
+case ...:
+break 
+default: 
+break; 
+} 
+
+Boas práticas
+- switch é para valores exatos e if para expressões
+booleanas.
+- evitar usar o default do switch pra cases genéricos
+- evitar o efeito "flecha" dos ifs 
+- evitar muitos ifs aninhados
+
+IV - BLOCOS 
+
+é um grupo de 0 ou mais códigos quais trabalham em 
+conjunto para executar uma operação 
+
+Tipos: 
+- Locais: dentro de métodos
+- Estáticos: dentro de classes
+- Instância: dentro de classes 
+
+
+Exemplos 
+
+if(autorizado) {
+	CarregarPerfil
+	DirecionarPáginaPrincipal
+} 
+
+if(menorIdade)
+	DirecionarPáginaProibido) 
+
+if(autorizado) {
+} 
+else 
+{
+}

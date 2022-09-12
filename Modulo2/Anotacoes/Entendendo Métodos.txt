@@ -1,0 +1,98 @@
+I - CRIAÇÃO
+
+Conceituação - O que são métodos?
+
+Responsáveis por definir e realizar um comportamento, 
+todo método é disponibilizado por uma classe.
+
+Criação 
+
+padrão de definição 
+<?visibilidade/> <?tipo?> <?modificador?> retorno
+nome (<?parâmetros?>) <?exceções?> corpo 
+
+- o que está entre interrogações é opcional
+
+V: public; protected; private
+T: concreto ou abstrato
+M: static ou final 
+R: tipo de dado ou void 
+N: nome que é fornecido ao método 
+P: parâmetros que pode receber 
+E: exceções que pode lançar 
+C: código que possui ou vazio
+
+
+Exemplos: 
+
+public String getNome() {...} 
+public double calcularTotalNota() {...} 
+public int verificarDist(int coordenada1, int coord2) 
+public abstract void executar(); 
+public void alterarFabricante(Fabricante fabricante) 
+
+geral: public static R N(P) {...} 
+
+Utilização 
+chama-se o método por classe ou objeto
+
+por classe:
+nome_da_classe.nome_do_metodo();   
+nome_da_classe.nome_do_metodo(...);
+
+por objeto
+nome_do_objeto.nome_do_metodo();  
+nome_do_objeto.nome_do_metodo();    
+
+
+Particularidades 
+
+Assinatura: forma de identificar unicamente o método
+Ass = nome + parâmetros 
+
+Método: 
+public double calcularTotalVenda(double precoitem1,
+double precoitem2, double precoitem3) {...} 
+
+Assinatura: 
+calcularTotalVenda(double precoitem1, double precoitem2,
+doubleprecoitem3)
+
+Boas práticas 
+- nomes expressivos, mas curtos
+- notação camelo 
+(verificarSaldo(); executarTransferencia(...);) 
+- evitar lista de parâmetros longas 
+
+
+II - SOBRECARGAS
+
+Conceituação: capacidade de definir métodos para 
+diferentes contextos
+
+converteParaInteiro(float f); 
+converteParaInteiro(double d); 
+converteParaInteiro(string s); 
+
+- nesse caso, o nome do método se manteve o mesmo, 
+apesar de a lista de parâmetros ter sido mudada. 
+
+
+III - RETORNOS 
+
+- o retorno pode ser um tipo primitivo ou objeto; 
+
+exempos: 
+
+public String getMensagem() { 
+	return "Ola!"; } 
+
+public double getJuros() {
+	return 2.36; 
+}
+
+public void executar() {
+...
+return;
+...
+}
