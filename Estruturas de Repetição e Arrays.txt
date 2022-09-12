@@ -1,0 +1,16 @@
+while - repetição com teste no início 
+do-while - repetição com teste no final 
+for - repetição contada
+
+continue - quando o continue é executado, ele ignora
+tudo que está depois dele e executa o loop novamente;
+
+while - executa o programa enquanto a condição for 
+verdadeira, quando a condição for falsa, encerra o
+loop. 
+
+**pesquisar as diferenças entre while e do while; 
+**pesquisar as diferenças entre pré-fixados e pós-
+fixados
+
+

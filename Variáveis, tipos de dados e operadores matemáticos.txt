@@ -1,0 +1,110 @@
+I - CONCEITUAÇÃO 
+Variáveis 
+
+tipos: 
+
+- instância: objeto
+- classe: classe
+- local: dentro de métodos
+- parâmetro: na assinatura do método 
+
+Sintaxe: 
+<visibilidade> <modifiicador> tipo nome <=valorInicial>
+
+os que estão entre <> não são necessários, coloque
+apenas se for preciso
+
+V: public, protected, priveted (ligadas a Orientação
+a objetos) 
+M: static, final (static ligado a O.O., uma variável
+final é uma variável constante)
+T: tipo de dado, que é obrigatório 
+N: nome da variável 
+VI: um valor inicial caso deseje
+
+Regras
+- não pode começar com números
+- evitar usar $ e _ 
+- são case-sensitive(diferencia maiúscula e minúscula)
+- sem espaços 
+- não pode ser as palavras reservadas do java, como:
+(do, if, break, double, case, else, import etc) 
+
+Exemplos:
+
+- int i; int i = 0; int final j = 10; 
+
+Boas práticas
+- começar com letra minúscula
+- nomes expressivos, que expressem bem o que aquela
+variável significa e pra que ela serve 
+- quando for final usar letra maiúscula e _ 
+(int final NUMERO_TENTATIVAS = 5) 
+- notação camelo (int quantidadeProduto), primeira
+letra minúscula e a letra da segunda palavra maiusc. 
+
+
+
+II - TIPOS DE DADOS 
+
+a) Textual b) Numeral c) Lógico d) Objeto
+
+a) caractere: colocar em aspas simples
+string: colocar em aspas duplas 
+
+b) byte: -128 até 127 
+short: -32.768 até 32.767
+int: -2.147.483.648 até 2.147.483.647
+long: -9.223.372.036.854.775.808 
+float: +-3.40282347E+38F 
+double: maior ainda
+
+c) lógico: verdadeiro ou falso
+
+quando usar float, preciso colocar o f no final
+mesma coisa a ser feita com long
+ex: float pi = 3.14f; 
+long num = 10000000000000l; 
+
+
+III - OPERADORES ARITMÉTICOS 
+pós-ficado: exp++ ou exp--
+prefixado: ++exp ou --exp
+aritmético: + - * / % 
+atribuição: =, +=, -=, *=, /= e %=
+
+int i = ++k (i= k+1)
+int j = k-- (j = k; k = k - 1)
+i+= 5 (i=i+5) 
+d/=2.7d (d= d/2.7d) 
+k%=2 (k=k%2)
+
+prioridades:pósfixado; prefixado; multiplicativo(*/%); 
+aditivo(+-); atribuição
+
+
+IV - CASTING 
+
+long-int: long l; int = 10; l = 1; 
+int-long: long l=100; i = (int)l; 
+double-float: double d; float f= 10.5f; d = f; 
+float-double: float f; double d= 0.5d; f= (float)d; 
+int-float: int i; float f= 10.5f; i = (int)f; 
+
+O casting pode ocorrer de duas maneiras: 
+1) upcast: quando passamos um tipo de armazenamento
+pequeno para armazenamento grande
+2) downcast: quando é de armazenamento grande para
+pequeno. 
+
+O upcast é explícito, eu preciso colocar para qual
+tipo eu to fazendo o cast, para o downcast não é 
+necessário. 
+Vale lembrar que quando eu faço tipo int para tipo
+float, eu estou recebendo na varíavel inteiro 
+apenas a quantidade inteira do float, exemplo: 
+float pi = 3.14; 
+i = (int)pi; 
+println(i) // a saída vai ser 3
+
+ 

@@ -1,0 +1,136 @@
+Collection é um objeto que agrupa múltiplos elementos
+(variáveis primitivas ou objetos) dentro de uma única
+unidade.
+
+
+I - LISTS 
+
+java.util.List
+
+arraylist - deve ser usado onde mais operações de 
+pesquisas são necessárias
+
+vector 
+
+LinkedList - deve ser usado onde mias operações de 
+inserção e exclusão são necessárias
+
+PriorityQueue
+
+métodos usados: criar nova lista, add, set, constains,
+min, max, iterator, size, index, remove, clear, isEmpty
+
+
+II - SET 
+
+java.util.Set 
+
+- não permite elementos duplicados; 
+- não possui índice(ou seja, não tem o método get, 
+index, set, em que os índices são passados); 
+
+
+Interface Set: Hashset e Interface SortedSet
+LinkedHashSet -> HashSet -> Interface Set 
+TreeSet -> Interf.NavigableSet -> Interface SortedSet
+-> Interface Set
+
+
+HashSet(não mantém a ordem do elementos) (HashMap)
+LinkedHashSet(mantém a ordem dos elementos)(linkedhashset)
+TreeSet(mantém a ordem natural dos elementos, se for
+número vai ser por ordem crescente, se for string 
+vai ser ordem alfabética) (TreeSet) 
+
+
+toSring() - serve para printar a lista/set pra mim 
+
+- não é possível acessar uma posição em set 
+- não é possível substituir um elemento por outro
+- é possível usar um contains para saber se um 
+determinado elemento pertence ao conjunto 
+- é possível exibir a menor nota 
+- é possível exibir a maior nota 
+- é possível fazer a soma dos elementos do conjunto 
+com iterator
+- é possível usar o método size para saber a quantidade
+de elementos dentro do conjunto 
+- é possível remover um determinado elemento, exemplo
+quero remover a nota 0 do set de notas
+usar: notas.remove(0d)  
+- não é possível remover a nota de uma determinada 
+posição 
+- é possível remover as notas menores que 7 
+
+
+III - MAP 
+
+- o map é um objeto que contém elementos únicos (key)
+para cada valor; 
+
+métodos: 
+- para acessar um map eu posso usar tanto o toString
+quando a variável criada; 
+- para inserir valores eu não uso add como em list ou
+set, eu uso put; 
+- eu posso ver se um determinado valor, seja string,
+int etc está contido no meu map, para isso eu uso 
+o containsKey();
+- é possível retornar o valor que está acompanhando 
+a chave se eu passar a chave, para isso eu uso o 
+get(); 
+- não é possível acessar a posição 
+- é possível copiar as chaves do map em colocar em um
+set, para isso eu uso keySet();
+é possível copiar os valores que não são chaves que 
+estão dentro do map em uma collection, para isso eu
+uso values(); 
+
+
+PESQUISAR SOBRE O ENTRY DE MAP 
+
+
+
+IV - STREAM 
+
+a) Classe anônima - usa-se sempre que precisa criar
+uma classe que será instaciada apenas uma vez. 
+A Camila deu o exemplo do exercício dos gatos e o 
+comando meusGatos.sort que tinha como parâmetro a 
+classe ComparatorIdade(); Usando classe anônima, 
+eu não crio uma classe para ComparatorIdade(), eu já
+coloco o código dentro de meusGatos.sort( {} ); 
+
+b) Interface funcional - o comparator é um functional
+interface e tem um método abstrato que é o compare; 
+outros exemplos: consumer; function; predicate; 
+
+c) Lambda - é uma função sem declaração, não é nece-
+ssário colocar um nome, tipo de retorno e modificador
+de acesso. Parece bastante com classe anônima, é como 
+uma simplificação da classe anônima. 
+A ideia é que o método seja declarado no mesmo lugar
+em que será usado.
+sintaxe (argumento) -> (corpo)
+
+d) Metódo referência - vai server para simplificar
+uma lambda expression
+faz referência a um método de uma classe e indica que
+deve ser utilizado num ponto específico do código,
+deixa + simples e legível. 
+sintaxe: classe/referencia :: nome do método
+
+e) Stream API  - é uma forma de facilitar a
+manipulação das collections 
+
+
+
+métodos 
+a) forEach (para cada) 
+b) accept (pega todos os elementos da list e imprime)
+c) limit (pega os x primeiros elementos de uma lista e 
+põe em outro lugar, como uma list ou set) 
+d) é possível transformar uma lista de string em uma 
+lista de inteiros com  o método chamado .map (não tem
+nada a ver com collections) 
+
